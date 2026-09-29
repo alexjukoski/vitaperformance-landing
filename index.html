@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica VitaPerformance | Saúde e Alta Performance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegação / Cabeçalho -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Vita<span>Performance</span></a>
+            <a href="#agendamento" class="btn-nav">Agendar Consulta</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="badge">Atendimento Exclusivo</span>
+                    <h1>Alcance o topo do seu desempenho físico e metabólico</h1>
+                    <p>Acompanhamento médico, nutricional e físico personalizado para quem busca resultados de elite com base científica.</p>
+                    <a href="#agendamento" class="btn-primary">Iniciar Avaliação</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pilares / Serviços -->
+        <section class="services">
+            <div class="container">
+                <h2>A Nossos Pilares de Atuação</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Nutrição Esportiva</h3>
+                        <p>Planos alimentares sob medida focados na otimização de composição corporal e energia.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Performance & Treino</h3>
+                        <p>Periodização estratégica baseada em métricas fisiológicas para máxima hipertrofia ou força.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Medicina Preventiva</h3>
+                        <p>Acompanhamento hormonal e metabólico para longevidade e disposição diária.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Qualificação -->
+        <section id="agendamento" class="lead-section">
+            <div class="container form-container">
+                <div class="form-header">
+                    <h2>Agende sua Triagem Inicial</h2>
+                    <p>Preencha os dados abaixo para direcionarmos o seu atendimento ao especialista correto.</p>
+                </div>
+
+                <form id="clinicForm" class="clinic-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: Gabriel Silva" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail Principal</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal">Qual o seu objetivo principal?</label>
+                        <select id="goal" name="goal" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="hipertrofia">Ganho de Massa Muscular (Hipertrofia)</option>
+                            <option value="emagrecimento">Emagrecimento & Definição</option>
+                            <option value="performance">Alta Performance Esportiva</option>
+                            <option value="saude">Saúde Geral & Reabilitação</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="btn-submit">Solicitar Atendimento</button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Clínica VitaPerformance. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
